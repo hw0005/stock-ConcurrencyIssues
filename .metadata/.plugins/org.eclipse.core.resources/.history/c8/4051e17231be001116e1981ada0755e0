@@ -1,0 +1,22 @@
+package com.example.stock;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.stock.repository.StockRepository;
+import com.example.stock.service.StockService;
+
+@SpringBootTest
+public class StockServiceTest {
+	
+	
+	@Autowired
+	private StockService stockService;
+	
+	@Autowired
+	private StockRepository stockRepository;
+	
+	
+	// 테스트 위해서 재고가 있어야 하므로 실행 전 데이터 생성
+	@BeforeEach
+}

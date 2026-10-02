@@ -1,0 +1,24 @@
+package com.example.stock.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.stock.repository.StockRepository;
+
+@Service
+public class StockService {
+	
+	private final StockRepository stockRepository;
+
+	public StockService(StockRepository stockRepository) {
+		this.stockRepository = stockRepository;
+	}
+	
+	// stock 조회, 재고를 감소한뒤, 갱신된 값 저장
+	public void decrease(Long id, Long quantity) {
+		
+	}
+	
+	
+	
+
+}

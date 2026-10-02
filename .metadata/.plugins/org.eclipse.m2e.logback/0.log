@@ -1,0 +1,1 @@
+2026-10-02 15:34:26,591 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

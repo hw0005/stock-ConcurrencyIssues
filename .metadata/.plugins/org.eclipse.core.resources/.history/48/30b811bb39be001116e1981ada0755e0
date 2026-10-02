@@ -1,0 +1,32 @@
+package com.example.stock;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.stock.domain.Stock;
+import com.example.stock.repository.StockRepository;
+import com.example.stock.service.StockService;
+
+@SpringBootTest
+public class StockServiceTest {
+	
+	@Autowired
+	private StockService stockService;
+	
+	@Autowired
+	private StockRepository stockRepository;
+	
+	
+	@BeforeEach
+	public void before() {
+		stockRepository.saveAndFlush(new Stock(1L, 100L));
+	}
+	
+	@AfterEach
+	public void after() {
+		stockRepository.deleteAll();
+	}
+	
+
+}

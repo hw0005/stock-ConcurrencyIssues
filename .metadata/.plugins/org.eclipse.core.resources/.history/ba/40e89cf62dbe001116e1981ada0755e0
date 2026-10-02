@@ -1,0 +1,8 @@
+package com.example.stock.domain;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Stock {
+
+}

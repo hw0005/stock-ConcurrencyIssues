@@ -1,0 +1,10 @@
+package com.example.stock.domain;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+
+@Entity
+public class Stock {
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+}

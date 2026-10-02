@@ -1,0 +1,13 @@
+package com.example.stock.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.stock.repository.StockRepository;
+
+@Service
+public class StockService {
+	
+	private StockRepository stockRepository;
+	
+
+}
