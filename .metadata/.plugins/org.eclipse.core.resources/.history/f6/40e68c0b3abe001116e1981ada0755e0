@@ -26,7 +26,7 @@ public class Stock {
 	} 
 
 	public Long getQuantity() {
-		return quantity;
+		return productId;
 	}
 
 

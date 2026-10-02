@@ -20,10 +20,7 @@ public class StockService {
 		Stock stock = stockRepository.findById(id).orElseThrow();
 		
 		// 재고 감소
-		stock.decrease(quantity);
-		
-		// 저장
-		stockRepository.saveAndFlush(stock);
+		stock.decrase(id);
 	}
 	
 	

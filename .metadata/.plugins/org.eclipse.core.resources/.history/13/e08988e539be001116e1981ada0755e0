@@ -1,7 +1,5 @@
 package com.example.stock;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,7 +37,6 @@ public class StockServiceTest {
 		
 		Stock stock = stockRepository.findById(1L).orElseThrow();
 		
-		assertEquals(99L, stock.getQuantity());
 		
 	}
 	

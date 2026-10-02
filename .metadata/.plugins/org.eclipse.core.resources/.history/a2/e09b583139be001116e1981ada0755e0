@@ -18,12 +18,6 @@ public class StockService {
 	public void decrase(Long id, Long quantity) {
 		// 조회
 		Stock stock = stockRepository.findById(id).orElseThrow();
-		
-		// 재고 감소
-		stock.decrease(quantity);
-		
-		// 저장
-		stockRepository.saveAndFlush(stock);
 	}
 	
 	

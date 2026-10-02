@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StockServiceTest" project="stock" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.stock.StockServiceTest" time="1.361" displayname="StockServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.stock.StockServiceTest]">
+    <testcase name="재고감소" classname="com.example.stock.StockServiceTest" time="1.361" displayname="재고감소()" uniqueid="[engine:junit-jupiter]/[class:com.example.stock.StockServiceTest]/[method:재고감소()]"/>
+  </testsuite>
+</testrun>

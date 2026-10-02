@@ -15,6 +15,7 @@ import com.example.stock.service.StockService;
 @SpringBootTest
 public class StockServiceTest {
 	
+	
 	@Autowired
 	private StockService stockService;
 	
@@ -22,6 +23,7 @@ public class StockServiceTest {
 	private StockRepository stockRepository;
 	
 	
+	// 테스트 위해서 재고가 있어야 하므로 실행 전 데이터 생성
 	@BeforeEach
 	public void before() {
 		stockRepository.saveAndFlush(new Stock(1L, 100L));
@@ -34,14 +36,10 @@ public class StockServiceTest {
 	
 	@Test
 	public void 재고감소() {
-		// 재고 감소
-		stockService.decrase(1L, 1L);
+		stockService.decrease(1L, 1L);
 		
 		Stock stock = stockRepository.findById(1L).orElseThrow();
 		
 		assertEquals(99L, stock.getQuantity());
-		
 	}
-	
-
 }

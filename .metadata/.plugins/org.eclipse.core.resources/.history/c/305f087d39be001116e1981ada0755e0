@@ -23,7 +23,7 @@ public class StockService {
 		stock.decrease(quantity);
 		
 		// 저장
-		stockRepository.saveAndFlush(stock);
+		stockRepository.saveandFlush(stock);
 	}
 	
 	

@@ -15,33 +15,6 @@ import com.example.stock.service.StockService;
 @SpringBootTest
 public class StockServiceTest {
 	
-	@Autowired
-	private StockService stockService;
-	
-	@Autowired
-	private StockRepository stockRepository;
-	
-	
-	@BeforeEach
-	public void before() {
-		stockRepository.saveAndFlush(new Stock(1L, 100L));
-	}
-	
-	@AfterEach
-	public void after() {
-		stockRepository.deleteAll();
-	}
-	
-	@Test
-	public void 재고감소() {
-		// 재고 감소
-		stockService.decrase(1L, 1L);
-		
-		Stock stock = stockRepository.findById(1L).orElseThrow();
-		
-		assertEquals(99L, stock.getQuantity());
-		
-	}
 	
 
 }

@@ -41,6 +41,7 @@ public class StockServiceTest {
 		
 		assertEquals(99L, stock.getQuantity());
 		
+		
 	}
 	
 

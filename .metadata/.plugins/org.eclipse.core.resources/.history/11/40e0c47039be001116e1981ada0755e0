@@ -21,9 +21,6 @@ public class StockService {
 		
 		// 재고 감소
 		stock.decrease(quantity);
-		
-		// 저장
-		stockRepository.saveAndFlush(stock);
 	}
 	
 	

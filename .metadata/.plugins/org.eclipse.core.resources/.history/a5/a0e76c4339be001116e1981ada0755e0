@@ -25,17 +25,6 @@ public class Stock {
 		this.quantity = quantity;
 	} 
 
-	public Long getQuantity() {
-		return quantity;
-	}
-
-
 	// 테스트 케이스 수량 확인용
-	public void decrease(Long quantity) {
-		if (this.quantity - quantity < 0) {
-			throw new RuntimeException("재고가 0미만일 수 없습니다");
-		}
-		
-		this.quantity -= quantity;
-	}
+	
 }

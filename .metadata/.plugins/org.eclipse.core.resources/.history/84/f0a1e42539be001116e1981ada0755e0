@@ -16,14 +16,7 @@ public class StockService {
 	
 	// stock 조회, 재고를 감소한뒤, 갱신된 값 저장
 	public void decrase(Long id, Long quantity) {
-		// 조회
-		Stock stock = stockRepository.findById(id).orElseThrow();
 		
-		// 재고 감소
-		stock.decrease(quantity);
-		
-		// 저장
-		stockRepository.saveAndFlush(stock);
 	}
 	
 	
