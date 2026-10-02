@@ -25,7 +25,6 @@ INDEX VERSION 1.134+D:\윤현우\solveConcurrencyIssues\ConcurrencyIssuesWorkspa
 560306067.index
 1340863899.index
 2374358286.index
-1201326162.index
 1526087834.index
 2578019389.index
 2646077113.index
