@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Version;
 
 @Entity
 public class Stock {
@@ -13,6 +14,9 @@ public class Stock {
 	private Long productId;
 	
 	private Long quantity;
+	
+	@Version
+	private Long version;
 	
 	// JPA 프레임워크 규칙 지키기
 	public Stock() {
