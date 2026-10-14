@@ -1,0 +1,3 @@
+encryption:
+  secret-key: "my-super-secret-travel-key-2026"
+  salt: "my-unique-salt-value-9999"
