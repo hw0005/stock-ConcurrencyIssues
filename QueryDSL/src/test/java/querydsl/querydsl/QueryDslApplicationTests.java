@@ -12,6 +12,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import querydsl.querydsl.entity.Hello;
 import querydsl.querydsl.entity.QHello;
+import querydsl.querydsl.repository.MemberRepository;
 
 @SpringBootTest
 @Transactional
@@ -19,6 +20,9 @@ class QueryDslApplicationTests {
 	
 	@Autowired
 	EntityManager em;
+	
+	@Autowired
+	MemberRepository memberRepository;
 	
 	@Test
 	void contextLoads() {
