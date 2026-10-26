@@ -82,6 +82,7 @@ public Page<MemberTeamDto> searchPageComplex(MemberSearchCondition condition, Pa
     // 3. 조건 충족 시 Count 쿼리 Skip (fetchOne 메서드 레퍼런스 전달)
     return PageableExecutionUtils.getPage(content, pageable, countQuery::fetchOne);
 }
+```
 
 ---
 
